@@ -1,12 +1,19 @@
-import { Link, useRouteMatch } from 'react-router-dom'
+import { useRouteMatch, useHistory } from 'react-router-dom'
 import React from 'react';
 
 const ClientPage = (props) => {
 const { /*URL*/ } = useRouteMatch()
+const { push } = useHistory();
+
+const handleClick = (e) => {
+    e.preventDefault();
+    push('/classes');
+}
+
 return (
     <div className = "clientContainer">
         <h1>Are you ready to get fit</h1>
-        <Link to={/*class form */}><button>CLASSES</button></Link>
+        <button onClick={handleClick}>CLASSES</button>
     </div>
 );
 };
