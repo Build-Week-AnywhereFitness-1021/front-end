@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import EditClass from "../Classes/EditForm";
 
-const Class = (props) => {
+const ClassComponent = (props) => {
     const {classNew, handleDelete, handleFetch } = props;
     const [user, setUser] = useState(localStorage.getItem("role_id"));
     const [toggleEdit, setToggleEdit] = useState(false);
@@ -51,4 +51,4 @@ const Class = (props) => {
 
 
 
-export default Class;
+export default ClassComponent;

@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { StyledClassForm } from '../styled-components/StyledClassForm'
 
+const ClassForm = () => {
+    return (
+        <div>
+            Classes go here
+        </div>
+    )
+}
 
 function ClassForm(props) {
 
