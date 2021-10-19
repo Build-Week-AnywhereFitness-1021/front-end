@@ -6,6 +6,11 @@ const initialState = {
         password: '',
         role: ''
     },
+    clients: [
+        {
+            username: ''
+        }
+    ],
     isFetching: false,
     error: '',
 }

@@ -1,8 +1,7 @@
-import { useRouteMatch, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import React from 'react';
 
 const ClientPage = (props) => {
-const { /*URL*/ } = useRouteMatch()
 const { push } = useHistory();
 
 const handleClick = (e) => {
