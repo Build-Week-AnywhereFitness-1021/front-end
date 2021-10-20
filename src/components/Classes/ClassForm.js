@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import {connect} from 'react-redux';
 import { useHistory } from 'react-router';
 // import { StyledClassForm } from '../styled-components/StyledClassForm';
+import styled from 'styled-components';
 import { addClass } from '../../actions/index';
 
-// const ClassForm = () => {
-//     return (
-//         <div>
-//             Classes go here
-//         </div>
-//     )
-// }
+const StyledClassForm = styled.div `
+background-color: fuchsia;
+`
 
 function ClassForm(props) {
     const [classData, setClassData] = useState({user_id: localStorage.user_id})
@@ -38,7 +35,7 @@ function ClassForm(props) {
     }
 
     return (
-        // <StyledClassForm>
+        <StyledClassForm>
             <form className='class-form container'>
                 <h2>Instructor Class Form</h2>
                 <div className="form-content">
@@ -120,7 +117,7 @@ function ClassForm(props) {
                     <button onClick={handleCancel}>Cancel</button>
                 </div>
             </form>
-        // </StyledClassForm>
+        </StyledClassForm>
     )
 }
 
