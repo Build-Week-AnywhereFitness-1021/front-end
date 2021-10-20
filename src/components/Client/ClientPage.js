@@ -1,8 +1,7 @@
-import { useRouteMatch, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import React from 'react';
 
 const ClientPage = (props) => {
-const { /*URL*/ } = useRouteMatch()
 const { push } = useHistory();
 
 const handleClick = (e) => {
@@ -13,7 +12,7 @@ const handleClick = (e) => {
 return (
     <div className = "clientContainer">
         <h1>Are you ready to get fit</h1>
-        <button onClick={handleClick}>CLASSES</button>
+        <button className='classesButton' onClick={handleClick}>CLASSES</button>
     </div>
 );
 };

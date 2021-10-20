@@ -1,21 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import '../index.css';
+import Logo from '../Assets/Logo.png';
 
-const Nav = () => {
+function Nav() {
     return (
-        <div className = "header">
-            <div className = "navBar">
-                <div>
-                    <Link to="/login">
-                        Login
-                    </Link>
-                    <Link to="/class">
-                        Classes
-                    </Link>
-                </div>
-            </div>
+        <div className='Nav'>
+            <img src={process.env.PUBLIC_URL + Logo} href='/' className='Nav-Logo' height={75} alt='Logo'/>
+            <a href='/login'>Login</a>
+            <a href='/Instructor'>Instructor</a>
+            <a href='/client'>Client</a>
         </div>
-    )
+    );
 }
 
 export default Nav;

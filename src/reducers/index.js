@@ -6,13 +6,19 @@ const initialState = {
         password: '',
         role: ''
     },
+    clients: [
+        {
+            username: ''
+        }
+    ],
     isFetching: false,
-    error: '',
+    error: ''
 }
 
 const reducer = (state = initialState, action) => {
     switch(action.type) {
         case(FETCH_START):
+        console.log("fetching!");
             return({
                 ...state,
                 user: {}, 

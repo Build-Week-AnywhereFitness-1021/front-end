@@ -1,3 +1,10 @@
+* {
+  width:100%;
+  height:100%;
+  color:white;
+  text-shadow: 1px 1px gold;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,165 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Nav {
+  background-color:white;
+  width:100%;
+  height:75px;
+  display:flex;
+  margin-bottom:25px;
+}
+.Nav a {
+  display:flex;
+  text-decoration:none;
+  justify-content:center;
+  align-items:center;
+  font-size:25px;
+  color:darkblue;
+  border: 1px solid darkred;
+  transition: 1s;
+}
+.Nav a:hover {
+  background-color:darkred;
+  border: 1px solid darkblue;
+  border-radius: 50%;
+  color:white;
+}
+.Nav a .active {
+  background-color:darkblue;
+  border: 1px solid darkred;
+  border-radius: 50%;
+  color:white;
+}
+h2 {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px darkred;
+}
+h3 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px darkred;
+}
+/* Background Image */
+.bg-image {
+  background-image: url(./Assets/KettleBells.jpg);
+  opacity: 85%;
+  width: 100%;
+  height: 100%;
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow:hidden;
+}
+
+/* Instructor Page Styling */
+.instructor-page {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px darkred;
+}
+.addClasses {
+  display:flex;
+  text-decoration:none;
+  background-color:white;
+  color:darkblue;
+  border: 1px solid darkred;
+  border-radius: 50%;
+  padding:2px;
+  justify-content:center;
+  max-width:125px;
+  max-height:25px;
+  transition: 1s;
+}
+.addClasses:hover {
+  display:flex;
+  text-decoration:none;
+  color:white;
+  background-color:darkred;
+  border: 1px solid darkblue;
+  padding:2px;
+  justify-content:center;
+  max-width:150px;
+  max-height:35px;
+}
+.manageClasses {
+  display:flex;
+  text-decoration:none;
+  background-color:white;
+  color:darkblue;
+  border: 1px solid darkred;
+  border-radius: 50%;
+  padding:2px;
+  justify-content:center;
+  max-width:125px;
+  max-height:25px;
+  transition: 1s;
+}
+.manageClasses:hover {
+  display:flex;
+  text-decoration:none;
+  color:white;
+  background-color:darkred;
+  border: 1px solid darkblue;
+  padding:2px;
+  justify-content:center;
+  max-width:125px;
+  max-height:35px;
+}
+
+/* Client Page Styling */
+.clientContainer h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px darkred;
+}
+.classesButton {
+  margin-top:150px;
+  width:auto;
+  max-height:20px;
+  box-shadow: 1px 1px darkgray;
+  background-color: black;
+}
+
+/* Login Page Styling */
+h1 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px darkred;
+}
+form {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input {
+  width:auto;
+  max-height:20px;
+  text-shadow: 1px 1px darkred;
+}
+label {
+  text-shadow: 1px 1px darkred;
+}
+button {
+  width:auto;
+  max-height:20px;
+  text-shadow: 1px 1px darkred;
 }
