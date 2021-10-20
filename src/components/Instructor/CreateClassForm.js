@@ -162,7 +162,7 @@ const CreateClassForm = (props) => {
                     />
                 </label>
 
-                <button className="navBtn">Submit</button>
+                <button className="submitButton">Submit</button>
             </form>
         </div>
     );
