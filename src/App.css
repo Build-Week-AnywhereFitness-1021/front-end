@@ -1,3 +1,7 @@
+* {
+  width:100%;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,91 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Nav {
+  background-color:white;
+  width:100%;
+  height:75px;
+  display:flex;
+  margin-bottom:25px;
+}
+.Nav a {
+  display:flex;
+  text-decoration:none;
+  justify-content:center;
+  align-items:center;
+  font-size:25px;
+  color:darkblue;
+  border: 1px solid darkred;
+  transition: 1s;
+}
+.Nav a:hover {
+  background-color:darkred;
+  border: 1px solid darkblue;
+  border-radius: 50%;
+  color:white;
+}
+
+/* Instructor Page Styling */
+.instructor-page {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.addClasses {
+  display:flex;
+  text-decoration:none;
+  color:darkblue;
+  border: 1px solid darkred;
+  border-radius: 50%;
+  padding:2px;
+  justify-content:center;
+  max-width:100px;
+  transition: 1s;
+}
+.addClasses:hover {
+  display:flex;
+  text-decoration:none;
+  color:white;
+  background-color:darkred;
+  border: 1px solid darkblue;
+  padding:2px;
+  justify-content:center;
+  max-width:125px;
+}
+.manageClasses {
+  display:flex;
+  text-decoration:none;
+  color:darkblue;
+  border: 1px solid darkred;
+  border-radius: 50%;
+  padding:2px;
+  justify-content:center;
+  max-width:135px;
+  transition: 1s;
+}
+.manageClasses:hover {
+  display:flex;
+  text-decoration:none;
+  color:white;
+  background-color:darkred;
+  border: 1px solid darkblue;
+  padding:2px;
+  justify-content:center;
+  max-width:125px;
+}
+
+/* Client Page Styling */
+.classesButton {
+  width:auto;
+  box-shadow: 1px 1px darkgray;
+}
+
+/* Login Page Styling */
+input {
+  width:auto;
+}
+button {
+  width:auto;
 }

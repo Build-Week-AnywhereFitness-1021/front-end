@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {connect} from 'react-redux';
 import axios from 'axios';
 import {useHistory} from 'react-router';
-import { fetchStart } from './../../actions/index';
+import { fetchStart, fetchSuccess } from './../../actions/index';
 
 const Login = (props) => { 
     const {push} = useHistory();
@@ -12,7 +12,7 @@ const Login = (props) => {
         password: '',
         role: ''
     });
-    const { user, isFetching, fetchStart } = props;
+    const { user, isFetching, fetchStart, fetchSuccess } = props;
     
     const handleChange = (e) => {
         setCreds({
@@ -23,12 +23,11 @@ const Login = (props) => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        //need data / backend?
-        console.log("logging in");
         if(creds.username === "" || creds.password === ""){
             setError("Username and Password must be filled.");
         }else {
             fetchStart();
+            fetchSuccess();
             push('/client');
         }
     }
@@ -83,4 +82,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, { fetchStart })(Login);
+export default connect(mapStateToProps, { fetchStart, fetchSuccess })(Login);
