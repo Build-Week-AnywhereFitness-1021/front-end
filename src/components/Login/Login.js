@@ -4,6 +4,7 @@ import {useHistory} from 'react-router';
 
 const Login = () => { 
     const {push} = useHistory();
+    //need to seterror
     const [error,setError] = useState('Test Error')
     const [creds, setCreds] = useState({
         username: '',
@@ -18,12 +19,25 @@ const Login = () => {
 
 
     }
-
+    // need backend endpoints
     const handleLogin = (e) => {
         e.preventDefault();
-        //need data / backend?
-
-
+        
+        axios.post("", creds)
+      .then(resp => {
+        // localStorage.setItem("token", resp.data.token);
+        // localStorage.setItem("role", resp.data.role);
+        if(resp.data.role === "instructor"){
+            push("/instructor")
+        }
+        else{
+            push("/client")
+        
+        }
+      })
+      .catch(err=> {
+        console.log(err);
+      })
     }
 
 
