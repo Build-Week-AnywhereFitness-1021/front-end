@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Login from './components/Login/Login';
 import ClientPage from './components/Client/ClientPage';
-import ClassForm from './components/Client/ClassForm';
+import ClassForm from './components/Classes/ClassForm';
 import InstructorPage from './components/Instructor/InstructorPage';
 import CreateClassForm from './components/Instructor/CreateClassForm';
 import KettleBells from './Assets/KettleBells.jpg';

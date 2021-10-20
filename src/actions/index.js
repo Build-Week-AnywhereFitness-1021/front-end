@@ -1,6 +1,7 @@
 export const FETCH_START = "FETCH_START";
 export const FETCH_SUCCESS = "FETCH_SUCCESS";
 export const FETCH_FAIL = "FETCH_FAIL";
+export const ADD_CLASS = "ADD_CLASS";
 
 // export const logIn = () => {
 //     axios.post('backend', user)
@@ -16,6 +17,9 @@ export const FETCH_FAIL = "FETCH_FAIL";
 // }
 
 
+export const addClass = () => {
+    return ({type:ADD_CLASS});
+}
 export const fetchStart = () => {
     return ({type:FETCH_START});
 }
