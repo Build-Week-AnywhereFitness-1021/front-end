@@ -1,62 +1,86 @@
 import React, {useState, useEffect} from 'react';
+import {connect} from 'react-redux';
 import axios from 'axios';
 import {useHistory} from 'react-router';
+import { fetchStart } from './../../actions/index';
 
-const Login = () => { 
+const Login = (props) => { 
     const {push} = useHistory();
-    const [error,setError] = useState('Test Error')
+    const [error,setError] = useState('');
     const [creds, setCreds] = useState({
         username: '',
-        password: ''
-    })
-
+        password: '',
+        role: ''
+    });
+    const { user, isFetching, fetchStart } = props;
+    
     const handleChange = (e) => {
         setCreds({
             ...creds,
             [e.target.name]: e.target.value
         })
-
-
     }
 
     const handleLogin = (e) => {
         e.preventDefault();
         //need data / backend?
-
-
+        console.log("logging in");
+        if(creds.username === "" || creds.password === ""){
+            setError("Username and Password must be filled.");
+        }else {
+            fetchStart();
+            push('/client');
+        }
     }
 
+    if(isFetching){
+        return <h2>Logging in...</h2>
+    }
 
     return( 
     <div className = "login-main">
         <h1>Login Page</h1>
-        <div className = "login-error">
-            <p id='error'>{error}</p>
-        </div>
-        <form onSumbit = {handleLogin} className = "login-form">
-            <label htmlFor="username-label">Username:</label><br/>
+        <form className = "login-form">
+            <label htmlFor="username-label">Username:</label>
                 <input
                     id="username"
+                    type="text"
                     name="username"
                     value={creds.username}
                     onChange={handleChange}
-                    />
-            <label htmlFor="password-label">Password:</label><br/>
+                    /><br/>
+            <label htmlFor="password-label">Password:</label>
                 <input
                     id="password"
+                    type="text"
                     name="password"
                     value={creds.password}
                     onChange={handleChange}
-                    />
-            <button id='login-submit'>Login</button>
+                    /><br/>
+            <label htmlFor="password-label">Instructor?</label>
+                <input
+                    id="role"
+                    type="checkbox"
+                    name="role"
+                    value={user.role}
+                    onChange={handleChange}
+                    /><br/>
+            <button id='login-submit' onClick={handleLogin}>Login</button>
         </form>
+        <div className = "login-error">
+            <p id='error'>{error}</p>
+        </div>
 
     </div>
     )
-
-
-
-
 }
 
-export default Login;
+const mapStateToProps = (state) => {
+    return {
+        user: state.user,
+        isFetching: state.isFetching,
+        error: state.error
+    }
+}
+
+export default connect(mapStateToProps, { fetchStart })(Login);
