@@ -20,16 +20,25 @@ const Login = (props) => {
             [e.target.name]: e.target.value
         })
     }
-
+    // need backend endpoints
     const handleLogin = (e) => {
         e.preventDefault();
-        if(creds.username === "" || creds.password === ""){
-            setError("Username and Password must be filled.");
-        }else {
-            fetchStart();
-            fetchSuccess();
-            push('/client');
+        
+        axios.post("", creds)
+      .then(resp => {
+        // localStorage.setItem("token", resp.data.token);
+        // localStorage.setItem("role", resp.data.role);
+        if(resp.data.role === "instructor"){
+            push("/instructor")
         }
+        else{
+            push("/client")
+        
+        }
+      })
+      .catch(err=> {
+        console.log(err);
+      })
     }
 
     if(isFetching){
