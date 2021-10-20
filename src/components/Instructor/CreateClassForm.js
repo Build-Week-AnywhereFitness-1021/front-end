@@ -1,286 +1,171 @@
-import React, { useState, useReducer } from "react";
-import { useHistory, useParams } from "react-router-dom";
-import styled from "styled-components";
-import { createClass, updateClass, deleteClass } from "../../actions/index";
+import React, { useState, useEffect } from "react";
 import axiosWithAuth from "../Login/utils/axiosWithAuth";
-import reducer from "../../reducers/index";
+import { useHistory } from "react-router-dom";
 
-
-const CreateClassForm = () => {
-
-    //HOOKS & SLICES OF STATE
-    const history = useHistory();
-    const params=useParams();
-    const [classes, setClasses] = useState([]);
-    const [newClassFormValues, setNewClassFormValues] = useState({
+const CreateClassForm = (props) => {
+    const { push } = useHistory();
+    const [createClassForm, setCreateClassForm] = useState({
         name: "",
+        instructor_name: "",
         type: "",
-        startTime: "",
-        duration: "",
-        intensityLevel: "",
+        intensity: "",
         location: "",
-        registered: "",
-        maxRegistered: "",
         date: "",
+        max_size: "",
+        duration: "",
+        signedUp: false,
     });
-    //taken out of state above
-    // id: "",
-    // isRegistered: true,
-    // isLoggedIn: true
 
-    //REDUCER / INITIAL STATE
-    const [state, dispatch] = useReducer(reducer);
-
-    //HANDLES CHANGES TO CREATE CLASS FORM INPUTS
-    const createClassFormChange = (event) => {
-        const { name, value } = event.target;
-
-        setNewClassFormValues({
-            ...newClassFormValues,
-            [name]: value
+    const handleChange = (event) => {
+        event.persist();
+        let value = event.target.value;
+        if (event.target.name === "max_size" || event.target.name === "duration") {
+            value = parseInt(value, 10);
+        }
+        setCreateClassForm({
+            ...createClassForm,
+            [event.target.name]: event.target.value,
         });
     };
 
-    //HANDLES SUBMISSION OF CREATE CLASS FORM INPUTS
-    const submitCreatedClass = (event) => {
+    const onSubmit = (event) => {
         event.preventDefault();
-        setClasses([...classes, newClassFormValues]);
-        console.log(classes);
-        console.log(newClassFormValues);
         axiosWithAuth()
-            .post("/api/instructor", classes)
+            .post(``, createClassForm)
             .then((res) => {
-                console.log("SUCCESSFULLY SUBMITTED CREATED CLASS", res);
+                console.log(res, "res");
+                push("/instructorlist");
             })
-            .catch((err) => {
-                console.log("FAILED TO SUBMIT CREATED CLASS", err);
-            });
+            .catch((err) => console.log(err));
+        setCreateClassForm({
+            name: "",
+            instructor_name: "",
+            type: "",
+            intensity: "",
+            location: "",
+            date: "",
+            max_size: "",
+            duration: "",
+            signedUp: false,
+        });
     };
 
-    //WHEN EDIT CLASS BUTTON ON AN INDIVIDUAL CLASS IS CLICKED, THIS FUNCTION EXPRESSION RUNS
-    const editClass= () => {
+    useEffect(() => {
         axiosWithAuth()
-            .get(`/api/instructor`)
-            .then((res)=>{
-                console.log("SUCCESS GETTING INDIVIDUAL CLASS ID UPON CLICKING EDIT", res)
-                history.push(`/update-class/${res.data[0].classId}`)
-            })
-            .catch((err)=>{
-                console.log("FAILURE GETTING INDIVIDUAL CLASS ID UPON CLICKING EDIT", err)
-            })
-        // history.push(`/update-class/${newClassFormValues.id}`);
-    }
-
-    //WHEN DElETE CLASS BUTTON ON AN INDIVIDUAL CLASS IS CLICKED, THIS FUNCTION EXPRESSION RUNS
-    const deleteClass = (classToBeDeleted) => {
-        axiosWithAuth()
-            .delete(`/api/instructor:id`, classToBeDeleted)
+            .get(``)
             .then((res) => {
-                console.log("SUCCESSFULLY DELETED CLASS", res);
+                console.log(res.data, "classes");
             })
-            .catch((err) => {
-                console.log("FAILED TO DELETE CLASS", err);
+            .catch((error) => {
+                console.log("the data was not returned", error);
             });
-    };
+    }, []);
 
     return (
-        <div>
-            <CreateClassDiv>
-                <h2>Create A Class</h2>
-                <CreateClassForm onSubmit={submitCreatedClass}>
-                    <label htmlFor="name">
-                        Class Name:
-                        <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            placeholder="Enter A Class Name"
-                            value={newClassFormValues.name}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+        <div className="class cards">
+            <h2>Create your class</h2>
+            <form onSubmit={onSubmit}>
+                <label htmlFor="name">
+                    <p>Class Name</p>
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        value={createClassForm.name}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                    <label htmlFor="type">
-                        Class Type:
-                        <input
-                            type="text"
-                            name="type"
-                            id="type"
-                            placeholder="Enter A Class Type"
-                            value={newClassFormValues.type}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+                <label htmlFor="instructor_name">
+                    <p>Instructor Name</p>
+                    <input
+                        id="instructor_name"
+                        type="text"
+                        name="instructor_name"
+                        value={createClassForm.instructor_name}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                    <label htmlFor="startTime">
-                        Start Time:
-                        <input
-                            type="text"
-                            name="startTime"
-                            id="startTime"
-                            placeholder="Enter A Class Start Time"
-                            value={newClassFormValues.startTime}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+                <label htmlFor="type">
+                    <p>Class Type - i.e - Boxing, HIIT, etc.</p>
+                    <input
+                        id="type"
+                        type="text"
+                        name="type"
+                        value={createClassForm.type}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                    <label htmlFor="name">
-                        Class Duration In Minutes:
-                        <input
-                            type="number"
-                            name="duration"
-                            id="duration"
-                            placeholder="Enter A Class Duration"
-                            value={newClassFormValues.duration}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+                <label htmlFor="intensity">
+                    <p>Class intensity level - Low, Medium or High</p>
+                    <input
+                        id="intensity"
+                        name="intensity"
+                        type="text"
+                        value={createClassForm.intensity}
+                        onChange={handleChange}
+                        required
+                    ></input>
+                </label>
 
-                    <label htmlFor="intensityLevel">
-                        Intensity Level:
-                        <input
-                            type="text"
-                            name="intensityLevel"
-                            id="intensityLevel"
-                            placeholder="Enter An Intensity Level"
-                            value={newClassFormValues.intensityLevel}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+                <label htmlFor="location">
+                    <p>Class Location</p>
+                    <input
+                        id="location"
+                        name="location"
+                        type="text"
+                        value={createClassForm.location}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                    <label htmlFor="location">
-                        Location:
-                        <input
-                            type="text"
-                            name="location"
-                            id="location"
-                            placeholder="Enter A Class Location"
-                            value={newClassFormValues.location}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+                <label htmlFor="date">
+                    <p>Start Date - Required Format mm/dd/yyyy</p>
+                    <input
+                        id="date"
+                        type="text"
+                        name="date"
+                        pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}"
+                        value={createClassForm.date}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                    <label htmlFor="registered">
-                        Number Of People Registered:
-                        <input
-                            type="text"
-                            name="registered"
-                            id="registered"
-                            placeholder="Enter The Number Of People Registered"
-                            value={newClassFormValues.registered}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+                <label htmlFor="max_size">
+                    <p>Maximum # of participants</p>
+                    <input
+                        id="max_size"
+                        name="max_size"
+                        type="number"
+                        value={createClassForm.max_size}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                    <label htmlFor="maxRegistered">
-                        Max Number Of Registered Attendees:
-                        <input
-                            type="number"
-                            name="maxRegistered"
-                            id="maxRegistered"
-                            placeholder="Enter A Max Number"
-                            value={newClassFormValues.maxRegistered}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
+                <label htmlFor="duration">
+                    <p>Class Duration in minutes</p>
+                    <input
+                        id="duration"
+                        type="number"
+                        name="duration"
+                        value={createClassForm.duration}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
 
-                    <label htmlFor="date">
-                        Enter The Class Date:
-                        <input
-                            type="text"
-                            name="date"
-                            id="date"
-                            placeholder="Enter The Class Date"
-                            value={newClassFormValues.date}
-                            onChange={createClassFormChange}
-                        />
-                    </label>
-
-                    {/* <label htmlFor="id">
-            Enter A Unique 3 Digit Number-ID:
-            <input
-              type="number"
-              name="id"
-              id="id"
-              placeholder="Enter A  Unique 3 Digit Number-ID"
-              value={newClassFormValues.id}
-              onChange={createClassFormChange}
-            />
-          </label> */}
-
-                    <button>Submit New Class</button>
-                </CreateClassForm>
-            </CreateClassDiv>
-            <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
-                Current Classes:
-            </h2>
-            {classes.map((cls) => {
-                return (
-                    <AllClasses>
-                        <h2>Class</h2>
-                        <p>Class Name: {cls.name}</p>
-                        <p>Class Type: {cls.type}</p>
-                        <p>Start Time: {cls.startTime}</p>
-                        <p>Class Duration: {cls.duration}</p>
-                        <p>Intensity Level: {cls.intensityLevel}</p>
-                        <p>Location: {cls.location}</p>
-                        <p>Number Of People Registered: {cls.registered}</p>
-                        <p>Max Number Of Attendees: {cls.maxRegistered}</p>
-                        <p>Class Date: {cls.date}</p>
-                        {/* <p>Class ID: {cls.id}</p> */}
-                        <button onClick={editClass} >Edit</button>
-                        <button onClick={deleteClass} >Delete</button>
-                    </AllClasses>
-                );
-            })}
+                <button className="navBtn">Submit</button>
+            </form>
         </div>
     );
 };
 
-//STYLED COMPONENTS FOR CREATE CLASS AND CLASS LIST
-
-const CreateClassDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  input,
-  label {
-    margin: 1rem;
-  }
-  input {
-    border-radius: 1rem;
-    border: .5rem ridge white;
-  }
-`;
-const CreateClass = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  button {
-    border-radius: 1rem;
-  }
-`;
-const AllClasses = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 2rem 2rem 3rem 0rem black;
-  font-size: 1.5rem;
-  margin: 1.5rem;
-  color: white;
-  font-weight: bold;
-  p {
-    padding: 1rem;
-    border-bottom: .5rem ridge black;
-  }
-  button {
-    margin: .5rem;
-    border-radius: 1rem;
-  }
-`;
-
-//EXPORTS
 export default CreateClassForm;
