@@ -40,14 +40,14 @@ const Login = () => {
                     name="username"
                     value={creds.username}
                     onChange={handleChange}
-                    />
+                /><br/>
             <label htmlFor="password-label">Password:</label><br/>
                 <input
                     id="password"
                     name="password"
                     value={creds.password}
                     onChange={handleChange}
-                    />
+                    /><br/>
             <button id='login-submit'>Login</button>
         </form>
 
