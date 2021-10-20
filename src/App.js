@@ -1,6 +1,7 @@
 import './App.css';
 import {Route, Switch} from 'react-router-dom';
 import Nav from './components/Nav';
+import Home from './components/Home';
 import Login from './components/Login/Login';
 import ClientPage from './components/Client/ClientPage';
 import ClassForm from './components/Client/ClassForm';
@@ -13,9 +14,8 @@ function App() {
     <div className="App">
       <Nav />
         <div className='bg-image'>
-             <h2>Anytime. Anywhere. Fitness.</h2><br/>
-             <h3>Your Fitness Journey Starts Here!</h3>
-
+          
+        <Switch>
             <Route path="/instructor" component={InstructorPage}/>
             <Route path="/CreateClassForm" component={CreateClassForm}/>
             <Route path="/classes" component={ClassForm}/>
@@ -25,6 +25,10 @@ function App() {
             <Route path="/login">
                 <Login />
             </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+        </Switch>
         </div>
     </div>
   );

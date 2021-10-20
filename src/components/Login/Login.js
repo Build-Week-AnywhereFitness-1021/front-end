@@ -23,7 +23,7 @@ const Login = (props) => {
     // need backend endpoints
     const handleLogin = (e) => {
         e.preventDefault();
-        
+        push("/client")
         axios.post("", creds)
       .then(resp => {
         // localStorage.setItem("token", resp.data.token);
@@ -75,9 +75,9 @@ const Login = (props) => {
                     /><br/>
             <button id='login-submit' onClick={handleLogin}>Login</button>
         </form>
-        <div className = "login-error">
+        {/* <div className = "login-error">
             <p id='error'>{error}</p>
-        </div>
+        </div> */}
 
     </div>
     )
