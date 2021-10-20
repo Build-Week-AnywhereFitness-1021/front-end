@@ -1,3 +1,7 @@
+* {
+  width:100%;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Nav {
+  background-color:white;
+  width:100%;
+  height:75px;
+  display:flex;
+  margin-bottom:25px;
+}
+.Nav a {
+  display:flex;
+  text-decoration:none;
+  justify-content:center;
+  align-items:center;
+  font-size:25px;
+  color:darkblue;
+  border: 1px solid darkred;
+}
+.Nav a:hover {
+  background-color:darkred;
+  border: 1px solid darkblue;
+  color:white;
 }

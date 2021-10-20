@@ -1,20 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import '../index.css';
+import Logo from '../Assets/Logo.png';
 
-const Nav = () => {
+function Nav() {
     return (
-        <div>
-            <Link to="/Instructor">
-                Instructor
-            </Link>
-            <Link to="/client">
-                Client
-            </Link>
-            <Link to="/login">
-                Login
-            </Link>
+        <div className='Nav'>
+            <img src={Logo} className='Nav-Logo' height={75} alt='Logo'/>
+            <a href='/Instructor'>Instructor</a>
+            <a href='/client'>Client</a>
+            <a href='/login'>Login</a>
         </div>
-    )
+    );
 }
 
 export default Nav;

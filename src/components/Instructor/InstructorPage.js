@@ -2,6 +2,7 @@ import React from 'react';
 import Classes from '../Classes/ClassesList';
 import EditForm from '../Classes/EditForm';
 import { Link } from 'react-router-dom';
+import './Instructor.css';
 
 const InstructorPage = () => {
     return(
