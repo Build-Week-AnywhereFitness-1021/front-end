@@ -9,7 +9,7 @@ const InstructorPage = () => {
     const { push } = useHistory();
     const handleClick = (e) => {
         e.preventDefault();
-        push('/classes');
+        push('/CreateClassForm');
     }
     return(
         <>

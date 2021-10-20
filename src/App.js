@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Login from './components/Login/Login';
 import ClientPage from './components/Client/ClientPage';
-import ClassForm from './components/Classes/ClassForm';
+import ClassesList from './components/Classes/ClassesList';
 import InstructorPage from './components/Instructor/InstructorPage';
 import CreateClassForm from './components/Instructor/CreateClassForm';
 import KettleBells from './Assets/KettleBells.jpg';
@@ -18,7 +18,7 @@ function App() {
         <Switch>
             <Route path="/instructor" component={InstructorPage}/>
             <Route path="/CreateClassForm" component={CreateClassForm}/>
-            <Route path="/classes" component={ClassForm}/>
+            <Route path="/classes" component={ClassesList}/>
             <Route path="/client">
                 <ClientPage />
             </Route>

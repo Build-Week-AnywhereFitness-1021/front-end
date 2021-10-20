@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axiosWithAuth from '../Login/utils/axiosWithAuth';
 import Class from "./ClassComponent";
 
-const Classes = () => {
+const ClassesList = () => {
     const [classes, setClasses] = useState([]);
 
     const fetchClasses = () => {
@@ -70,4 +70,4 @@ const Classes = () => {
     );
 };
 
-export default Classes;
+export default ClassesList;
