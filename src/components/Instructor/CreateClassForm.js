@@ -1,9 +1,9 @@
 import React, { useState, useReducer } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import styled from "styled-components";
-import { createClass, updateClass, deleteClass } from "../Actions/actions";
+import { createClass, updateClass, deleteClass } from "../../actions/index";
 import axiosWithAuth from "../Login/utils/axiosWithAuth";
-import { initialState, reducer } from "../Reducers/reducers";
+import reducer from "../../reducers/index";
 
 
 const CreateClassForm = () => {
@@ -29,7 +29,7 @@ const CreateClassForm = () => {
     // isLoggedIn: true
 
     //REDUCER / INITIAL STATE
-    const [state, dispatch] = useReducer(reducer, initialState);
+    const [state, dispatch] = useReducer(reducer);
 
     //HANDLES CHANGES TO CREATE CLASS FORM INPUTS
     const createClassFormChange = (event) => {
@@ -255,7 +255,7 @@ const CreateClassDiv = styled.div`
     border: .5rem ridge white;
   }
 `;
-const CreateClassForm = styled.form`
+const CreateClass = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
