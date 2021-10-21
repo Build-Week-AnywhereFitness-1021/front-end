@@ -245,10 +245,30 @@ a.addClasses {
 }
 
 /* Classes Page Styling */
-div.cardHolder {
-  display:flex;
+.cardHolder {
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  margin:15% 5%;
+  border: 1px solid darkred;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: black;
+  opacity: 75%;
 }
-div.cardHolder h1 {
-  margin-top: -5%;
+.cardHolder h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:-5%;
+  padding: 15px 0;
+}
+.cardHolder .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2% 2%;
+  padding: 5%;
+  color:white;
 }
