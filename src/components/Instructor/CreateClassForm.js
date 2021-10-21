@@ -62,7 +62,7 @@ const CreateClassForm = (props) => {
     }, []);
 
     return (
-        <div className="class cards">
+        <div className="create-class">
             <h2>Create your class</h2>
             <form onSubmit={onSubmit}>
                 <label htmlFor="name">
@@ -71,6 +71,7 @@ const CreateClassForm = (props) => {
                         id="name"
                         type="text"
                         name="name"
+                        placeholder="Class Name"
                         value={createClassForm.name}
                         onChange={handleChange}
                         required
@@ -83,6 +84,7 @@ const CreateClassForm = (props) => {
                         id="instructor_name"
                         type="text"
                         name="instructor_name"
+                        placeholder="Instructor Name"
                         value={createClassForm.instructor_name}
                         onChange={handleChange}
                         required
@@ -95,6 +97,7 @@ const CreateClassForm = (props) => {
                         id="type"
                         type="text"
                         name="type"
+                        placeholder="Class Type"
                         value={createClassForm.type}
                         onChange={handleChange}
                         required
@@ -107,6 +110,7 @@ const CreateClassForm = (props) => {
                         id="intensity"
                         name="intensity"
                         type="text"
+                        placeholder="Class Intensity"
                         value={createClassForm.intensity}
                         onChange={handleChange}
                         required
@@ -119,6 +123,7 @@ const CreateClassForm = (props) => {
                         id="location"
                         name="location"
                         type="text"
+                        placeholder="Class Location"
                         value={createClassForm.location}
                         onChange={handleChange}
                         required
@@ -131,6 +136,7 @@ const CreateClassForm = (props) => {
                         id="date"
                         type="text"
                         name="date"
+                        placeholder="Date"
                         pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}"
                         value={createClassForm.date}
                         onChange={handleChange}
@@ -144,6 +150,7 @@ const CreateClassForm = (props) => {
                         id="max_size"
                         name="max_size"
                         type="number"
+                        placeholder="Max Capacity"
                         value={createClassForm.max_size}
                         onChange={handleChange}
                         required
@@ -156,6 +163,7 @@ const CreateClassForm = (props) => {
                         id="duration"
                         type="number"
                         name="duration"
+                        placeholder="Class Duration"
                         value={createClassForm.duration}
                         onChange={handleChange}
                         required

@@ -41,17 +41,20 @@ input{
 .homePage {
   display:flex;
   justify-content: center;
+  flex-direction: column;
   margin-top:5%;
 }
-.homePage h2{
+div.homePage h2{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 45px;
+}
+div.homePage h3{
+  display: flex;
   justify-content: center;
   align-content: center;
   font-size: 35px;
-}
-.homePage h3{
-  justify-content: center;
-  align-content: center;
-  font-size: 25px;
 }
 
 /* Nav Styling */
@@ -129,10 +132,12 @@ input {
 }
 label {
   text-shadow: 1px 1px darkred;
+  margin-right: 10px;
 }
 button {
   width:auto;
-  max-height:20px;
+  max-height:25px;
+  font-size:15px;
   text-shadow: 1px 1px darkred;
 }
 
@@ -200,13 +205,29 @@ a.addClasses {
   max-height:35px;
 }
 
-/* Client Page Styling */
-.clientContainer h1 {
+/*CreateClassForm Styling */
+.create-class {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top:5%;
+}
+.create-class h2{
   display:flex;
   justify-content: center;
   align-content: center;
+  font-size: 45px;
+}
+
+/* Client Page Styling */
+
+.clientContainer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   position: absolute;
-  top: 50%;
+  margin-top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 1px 1px darkred;
@@ -215,10 +236,19 @@ a.addClasses {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top:25%;
-  margin-left: 15%;
+  font-size:20px;
+  color:black;
   width:auto;
-  max-height:20px;
+  max-height:25px;
   box-shadow: 1px 1px darkgray;
   background-color: white;
+}
+
+/* Classes Page Styling */
+div.cardHolder {
+  display:flex;
+  flex-direction: column;
+}
+div.cardHolder h1 {
+  margin-top: -5%;
 }
