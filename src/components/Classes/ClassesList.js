@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axiosWithAuth from '../Login/utils/axiosWithAuth';
 import ClassComponent from "./ClassComponent";
-import ClassCard from '../Cards/ClassCard';
 import initialClassesList from '../dummyData/initialClassesList';
+import '../Cards/HomeCards.css';
 
 const ClassesList = () => {
     // const [classes, setClasses] = useState([]);

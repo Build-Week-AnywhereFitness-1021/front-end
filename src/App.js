@@ -7,7 +7,6 @@ import ClientPage from './components/Client/ClientPage';
 import ClassesList from './components/Classes/ClassesList';
 import InstructorPage from './components/Instructor/InstructorPage';
 import CreateClassForm from './components/Instructor/CreateClassForm';
-import KettleBells from './Assets/KettleBells.jpg';
 
 function App() {
   return (
