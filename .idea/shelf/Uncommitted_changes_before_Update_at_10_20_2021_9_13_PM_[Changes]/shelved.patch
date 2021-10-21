@@ -1,0 +1,827 @@
+Index: src/App.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>* {\r\n  width:100%;\r\n  height:100%;\r\n  color:white;\r\n  text-shadow: 1px 1px gold;\r\n}\r\n\r\n.App {\r\n  text-align: center;\r\n}\r\n\r\n.App-logo {\r\n  height: 40vmin;\r\n  pointer-events: none;\r\n}\r\n\r\n@media (prefers-reduced-motion: no-preference) {\r\n  .App-logo {\r\n    animation: App-logo-spin infinite 20s linear;\r\n  }\r\n}\r\n\r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n\r\n.App-link {\r\n  color: #61dafb;\r\n}\r\n\r\n@keyframes App-logo-spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n.Nav {\r\n  background-color:white;\r\n  width:100%;\r\n  height:75px;\r\n  display:flex;\r\n  margin-bottom:25px;\r\n}\r\n.Nav a {\r\n  display:flex;\r\n  text-decoration:none;\r\n  justify-content:center;\r\n  align-items:center;\r\n  font-size:25px;\r\n  color:darkblue;\r\n  border: 1px solid darkred;\r\n  transition: 1s;\r\n}\r\n.Nav a:hover {\r\n  background-color:darkred;\r\n  border: 1px solid darkblue;\r\n  border-radius: 50%;\r\n  color:white;\r\n}\r\n.Nav a .active {\r\n  background-color:darkblue;\r\n  border: 1px solid darkred;\r\n  border-radius: 50%;\r\n  color:white;\r\n}\r\nh2 {\r\n  position: absolute;\r\n  top: 58%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  text-shadow: 1px 1px darkred;\r\n}\r\nh3 {\r\n  position: absolute;\r\n  top: 65%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  text-shadow: 1px 1px darkred;\r\n}\r\n/* Background Image */\r\n.bg-image {\r\n  background-image: url(./Assets/KettleBells.jpg);\r\n  opacity: 85%;\r\n  width: 100%;\r\n  height: 100%;\r\n  position:relative;\r\n  background-repeat:no-repeat;\r\n  background-size:cover;\r\n  overflow:hidden;\r\n}\r\n\r\n/* Instructor Page Styling */\r\n.instructor-page {\r\n  display:flex;\r\n  justify-content:center;\r\n  flex-direction:column;\r\n  align-items:center;\r\n}\r\np {\r\n  position: absolute;\r\n  top: 85%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  text-shadow: 1px 1px darkred;\r\n}\r\n.addClasses {\r\n  display:flex;\r\n  text-decoration:none;\r\n  background-color:white;\r\n  color:darkblue;\r\n  border: 1px solid darkred;\r\n  border-radius: 50%;\r\n  padding:2px;\r\n  justify-content:center;\r\n  max-width:125px;\r\n  max-height:25px;\r\n  transition: 1s;\r\n}\r\n.addClasses:hover {\r\n  display:flex;\r\n  text-decoration:none;\r\n  color:white;\r\n  background-color:darkred;\r\n  border: 1px solid darkblue;\r\n  padding:2px;\r\n  justify-content:center;\r\n  max-width:150px;\r\n  max-height:35px;\r\n}\r\n.manageClasses {\r\n  display:flex;\r\n  text-decoration:none;\r\n  background-color:white;\r\n  color:darkblue;\r\n  border: 1px solid darkred;\r\n  border-radius: 50%;\r\n  padding:2px;\r\n  justify-content:center;\r\n  max-width:125px;\r\n  max-height:25px;\r\n  transition: 1s;\r\n}\r\n.manageClasses:hover {\r\n  display:flex;\r\n  text-decoration:none;\r\n  color:white;\r\n  background-color:darkred;\r\n  border: 1px solid darkblue;\r\n  padding:2px;\r\n  justify-content:center;\r\n  max-width:125px;\r\n  max-height:35px;\r\n}\r\n\r\n/* Client Page Styling */\r\n.clientContainer h1 {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  text-shadow: 1px 1px darkred;\r\n}\r\n.classesButton {\r\n  margin-top:150px;\r\n  width:auto;\r\n  max-height:20px;\r\n  box-shadow: 1px 1px darkgray;\r\n  background-color: black;\r\n}\r\n\r\n/* Login Page Styling */\r\nh1 {\r\n  position: absolute;\r\n  top: 75%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  text-shadow: 1px 1px darkred;\r\n}\r\nform {\r\n  position: absolute;\r\n  top: 100%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\ninput {\r\n  width:auto;\r\n  max-height:20px;\r\n  text-shadow: 1px 1px darkred;\r\n}\r\nlabel {\r\n  text-shadow: 1px 1px darkred;\r\n}\r\nbutton {\r\n  width:auto;\r\n  max-height:20px;\r\n  text-shadow: 1px 1px darkred;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.css b/src/App.css
+--- a/src/App.css	(revision be6e1045bfd60012d23a468eecac49697bc581d8)
++++ b/src/App.css	(date 1634765993164)
+@@ -99,11 +99,18 @@
+ }
+ 
+ /* Instructor Page Styling */
+-.instructor-page {
++div h1 {
++  margin-top:-150px;
++}
++button.addClass {
++
++}
++form#InstructorForm {
+   display:flex;
+   justify-content:center;
+   flex-direction:column;
+   align-items:center;
++  top:95%;
+ }
+ p {
+   position: absolute;
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import './App.css';\r\nimport {Route, Switch} from 'react-router-dom';\r\nimport Nav from './components/Nav';\r\nimport Home from './components/Home';\r\nimport Login from './components/Login/Login';\r\nimport ClientPage from './components/Client/ClientPage';\r\nimport ClassesList from './components/Classes/ClassesList';\r\nimport InstructorPage from './components/Instructor/InstructorPage';\r\nimport CreateClassForm from './components/Instructor/CreateClassForm';\r\nimport KettleBells from './Assets/KettleBells.jpg';\r\n\r\nfunction App() {\r\n  return (\r\n    <div className=\"App\">\r\n      <Nav />\r\n        <div className='bg-image'>\r\n          \r\n        <Switch>\r\n            <Route path=\"/instructor\" component={InstructorPage}/>\r\n            <Route path=\"/CreateClassForm\" component={CreateClassForm}/>\r\n            <Route path=\"/classes\" component={ClassesList}/>\r\n            <Route path=\"/client\">\r\n                <ClientPage />\r\n            </Route>\r\n            <Route path=\"/login\">\r\n                <Login />\r\n            </Route>\r\n            <Route path=\"/\">\r\n              <Home />\r\n            </Route>\r\n        </Switch>\r\n        </div>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.js b/src/App.js
+--- a/src/App.js	(revision be6e1045bfd60012d23a468eecac49697bc581d8)
++++ b/src/App.js	(date 1634773022995)
+@@ -7,7 +7,8 @@
+ import ClassesList from './components/Classes/ClassesList';
+ import InstructorPage from './components/Instructor/InstructorPage';
+ import CreateClassForm from './components/Instructor/CreateClassForm';
+-import KettleBells from './Assets/KettleBells.jpg';
++import ClassCard from './components/Classes/ClassCard';
++import InstructorForm from './components/Instructor/InstructorForm';
+ 
+ function App() {
+   return (
+@@ -16,6 +17,8 @@
+         <div className='bg-image'>
+           
+         <Switch>
++            <Route path="/InstructorForm" component={InstructorForm}/>
++            <Route path="/ClassCard" component={ClassCard}/>
+             <Route path="/instructor" component={InstructorPage}/>
+             <Route path="/CreateClassForm" component={CreateClassForm}/>
+             <Route path="/classes" component={ClassesList}/>
+Index: src/components/Client/ClientPage.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { useHistory } from 'react-router-dom'\r\nimport React from 'react';\r\n\r\nconst ClientPage = (props) => {\r\nconst { push } = useHistory();\r\n\r\nconst handleClick = (e) => {\r\n    e.preventDefault();\r\n    push('/classes');\r\n}\r\n\r\nreturn (\r\n    <div className = \"clientContainer\">\r\n        <h1>Are you ready to get fit</h1>\r\n        <button className='classesButton' onClick={handleClick}>CLASSES</button>\r\n    </div>\r\n);\r\n};\r\nexport default ClientPage;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Client/ClientPage.js b/src/components/Client/ClientPage.js
+--- a/src/components/Client/ClientPage.js	(revision be6e1045bfd60012d23a468eecac49697bc581d8)
++++ b/src/components/Client/ClientPage.js	(date 1634766462152)
+@@ -1,5 +1,6 @@
+ import { useHistory } from 'react-router-dom'
+ import React from 'react';
++import ClassCard from "../Classes/ClassCard";
+ 
+ const ClientPage = (props) => {
+ const { push } = useHistory();
+Index: src/components/Instructor/InstructorPage.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport Classes from '../Classes/ClassesList';\r\nimport EditForm from '../Classes/EditForm';\r\nimport { Link } from 'react-router-dom';\r\nimport { useHistory } from 'react-router-dom'\r\nimport KettleBells from '../../Assets/KettleBells.jpg';\r\n\r\nconst InstructorPage = () => {\r\n    const { push } = useHistory();\r\n    const handleClick = (e) => {\r\n        e.preventDefault();\r\n        push('/CreateClassForm');\r\n    }\r\n    return(\r\n        <>\r\n            <div className='instructor-page'>\r\n                {/* <p>As an instructor, you can...</p> */}\r\n                <Link className='addClasses' onClick={handleClick}>Add Classes</Link><br/>\r\n                <Link className='manageClasses' onClick={handleClick}>Manage Classes</Link>\r\n            </div>\r\n        </>\r\n    )\r\n}\r\n\r\nexport default InstructorPage;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Instructor/InstructorPage.js b/src/components/Instructor/InstructorPage.js
+--- a/src/components/Instructor/InstructorPage.js	(revision be6e1045bfd60012d23a468eecac49697bc581d8)
++++ b/src/components/Instructor/InstructorPage.js	(date 1634765965388)
+@@ -1,25 +1,36 @@
+-import React from 'react';
+-import Classes from '../Classes/ClassesList';
+-import EditForm from '../Classes/EditForm';
+-import { Link } from 'react-router-dom';
+-import { useHistory } from 'react-router-dom'
+-import KettleBells from '../../Assets/KettleBells.jpg';
++import React, { useState, useEffect } from "react";
++import axiosWithAuth from "../Login/utils/axiosWithAuth";
++import ClassCard from "../Classes/ClassCard"
++import InstructorForm from './InstructorForm'
+ 
+-const InstructorPage = () => {
+-    const { push } = useHistory();
+-    const handleClick = (e) => {
+-        e.preventDefault();
+-        push('/CreateClassForm');
+-    }
+-    return(
++const InstructorDashboard = () => {
++    const [allClasses, setAllClasses] = useState([]);
++    const [myClasses, setMyClasses] = useState([]);
++    const [refresh, setRefresh] = useState(false);
++    useEffect(() => {
++        axiosWithAuth()
++            .get("/instructor/classes")
++            .then((res) => {
++                console.log(res.data.data);
++                setMyClasses(res.data.data);
++            })
++            .catch((err) => {
++                console.log(err);
++            });
++    }, [refresh]);
++
++    return (
+         <>
+-            <div className='instructor-page'>
+-                {/* <p>As an instructor, you can...</p> */}
+-                <Link className='addClasses' onClick={handleClick}>Add Classes</Link><br/>
+-                <Link className='manageClasses' onClick={handleClick}>Manage Classes</Link>
++            <button className='addClass'>Create a Class</button>
++            <InstructorForm />
++
++            <h1>My Classes</h1>
++            <div class="classList">
++                {myClasses.map((item) => {
++                    return <ClassCard key={item.id} details={item}></ClassCard>;
++                })}
+             </div>
+         </>
+-    )
+-}
+-
+-export default InstructorPage;
+\ No newline at end of file
++    );
++};
++export default InstructorDashboard;
+\ No newline at end of file
+Index: src/components/Classes/ClassCard.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Classes/ClassCard.js b/src/components/Classes/ClassCard.js
+new file mode 100644
+--- /dev/null	(date 1634772967854)
++++ b/src/components/Classes/ClassCard.js	(date 1634772967854)
+@@ -0,0 +1,19 @@
++import React from "react";
++
++function ClassCard(props) {
++    console.log(props);
++    return (
++        <div>
++            <p>Class Name: {props.details.classname}</p>
++            <p>Location: {props.details.location}</p>
++            <p>Date: {props.details.date}</p>
++            <p>Time: {props.details.time}</p>
++            <p>Class Type: {props.details.classtype}</p>
++            <p>Duration: {props.details.duration}</p>
++            <p>IntensityLevel: {props.details.intensityLevel}</p>
++            <p>Current Attendees Number: {props.details.currentAttendeesNo}</p>
++            <p>Max Size: {props.details.maxsize}</p>
++        </div>
++    );
++}
++export default ClassCard;
+\ No newline at end of file
+Index: src/components/Instructor/InstructorForm.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Instructor/InstructorForm.js b/src/components/Instructor/InstructorForm.js
+new file mode 100644
+--- /dev/null	(date 1634765567159)
++++ b/src/components/Instructor/InstructorForm.js	(date 1634765567159)
+@@ -0,0 +1,262 @@
++import React, { useState, useEffect } from 'react'
++import axios from 'axios'
++import * as yup from 'yup'
++import { ToastsContainer, ToastsStore } from 'react-toasts';
++import {
++    Input,
++    Select,
++    Button,
++    Form,
++    Error,
++    SelectContainer,
++    FormAlign,
++    HeaderDiv,
++} from '../Styles/formStyles'
++const formSchema = yup.object().shape({
++    className: yup.string()
++        .min(5, "must include more than 5 characters")
++        .required("must include class name"),
++    name: yup.string()
++        .min(2, "must include atleast 2 characters")
++        .required("Name is requried"),
++    date: yup.string()
++        .required("must select a date"),
++    duration: yup.string()
++        .required("must select duration"),
++    type: yup.string()
++        .required("must select a type"),
++    Intensity: yup.string()
++        .required("must select an intensity"),
++    Location: yup.string()
++        .required("must select a location"),
++    currentNumber: yup.number()
++        .min(1, "Number must be greater than 0").required(),
++    maxMembers: yup.number()
++        .min(1, "number must be greater than 0").required(),
++})
++const InstructorForm = () => {
++    const [application, setApplication] = useState([])
++    const [isDisabled, setDisabled] = useState(true)
++    const [formState, setFormState] = useState({
++        className: "",
++        name: "",
++        date: "",
++        duration: "",
++        type: "",
++        Intensity: "",
++        Location: "",
++        currentNumber: 0,
++        maxMembers: 0,
++    })
++    const [errorState, setErrorState] = useState({
++        className: "*",
++        name: "*",
++        date: "*",
++        duration: "*",
++        type: "*",
++        Intensity: "*",
++        Location: "*",
++        currentNumber: "*",
++        maxMembers: "*",
++    })
++    const validate = (e) => {
++        yup.reach(formSchema, e.target.name).validate(e.target.value)
++            .then(valid => {
++                setErrorState({
++                    ...errorState,
++                    [e.target.name]: ""
++                })
++            }).catch(err => {
++            console.log(err.errors)
++            setErrorState({
++                ...errorState,
++                [e.target.name]: err.errors[0]
++            })
++        })
++    }
++    useEffect(() => {
++        formSchema.isValid(formState).then(valid => {
++            setDisabled(!valid);
++        })
++    }, [formState])
++    const inputChange = e => {
++        e.persist()
++        validate(e)
++        setFormState({ ...formState, [e.target.name]: e.target.value })
++    }
++    const formSubmit = (e) => {
++        e.preventDefault()
++        formSchema.isValid(formState).then(valid => {
++                if (valid) {
++                    axios.post('https://reqres.in/api/users', formState)
++                        .then(res => console.log(res))
++                } else {
++                    alert("you must fill out all fields")
++                }
++            }
++        ).catch(err => {
++            console.log(err)
++        })
++        console.log("form submitted")
++    }
++    return (
++        <div>
++
++            <Form onSubmit={formSubmit}>
++                <FormAlign>
++                    <HeaderDiv>
++                        <h2>Create Class</h2>
++                    </HeaderDiv>
++                    <label htmlFor="className">
++                        <SelectContainer>
++                            Class name:
++                            <Input
++                                type="text"
++                                name="className"
++                                id="className"
++                                placeholder="Create Class Name"
++                                value={formState.className}
++                                onChange={inputChange}
++                            />
++                            {errorState.className ? <Error>{errorState.className}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                    <label htmlFor="name">
++                        <SelectContainer>
++                            NAME:
++                            <Input
++                                type="text"
++                                name="name"
++                                id="name"
++                                placeholder="Enter Name"
++                                value={formState.name}
++                                onChange={inputChange}
++                            />
++                            {errorState.name ? <Error>{errorState.name}</Error> : null}
++                        </SelectContainer>
++                    </label>
++
++
++                    <label htmlFor="date">
++
++
++                        <SelectContainer>
++                            DATE:
++                            <Input
++                                type="text"
++                                name="date"
++                                id="date"
++                                placeholder="Enter Date"
++                                value={formState.date}
++                                onChange={inputChange}
++                            />
++                            {errorState.date ? <Error>{errorState.date}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                    <label htmlFor="duration">
++                        <SelectContainer>
++                            Duration:
++                            <Select
++                                value={formState.duration}
++                                name="duration"
++                                id="duration"
++                                onChange={inputChange}>
++                                <option value="">N/A</option>
++                                <option value="30">30 minutes</option>
++                                <option value="1 hour">1 hour</option>
++                                <option value="1 1/2 hours">1 1/5 hours</option>
++                                <option value="2 hours">2 hours</option>
++                            </Select>
++                            {errorState.duration ? <Error>{errorState.duration}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                    <label htmlFor="type">
++                        <SelectContainer>
++                            TYPE:
++                            <Select
++                                value={formState.type}
++                                name="type"
++                                id="type"
++                                onChange={inputChange}>
++                                <option value="">N/A</option>
++                                <option value="Cardio">Cardio</option>
++                                <option value="Legs">Legs minutes</option>
++                                <option value="Arms">Arms</option>
++                                <option value="Chest">Chest</option>
++                                <option value="Yoga">Yoga</option>
++                                <option value="Zumba">Zumba</option>
++                                <option value="Turbo-Kick">Turbo-Kick</option>
++                            </Select>
++                            {errorState.type ? <Error>{errorState.type}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                    <label htmlFor="Intensity">
++                        <SelectContainer>
++                            Intensity:
++                            <Select
++                                value={formState.Intensity}
++                                name="Intensity"
++                                id="Intensity"
++                                onChange={inputChange}>
++                                <option value="">N/A</option>
++                                <option value="easy">easy</option>
++                                <option value="Medium">Medium</option>
++                                <option value="Hard">Hard</option>
++                                <option value="Psycho Path">Psycho Path</option>
++                            </Select>
++                            {errorState.Intensity ? <Error>{errorState.Intensity}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                    <label htmlFor="Location">
++                        <SelectContainer>
++                            Location:
++                            <Select
++                                value={formState.Location}
++                                name="Location"
++                                id="Location"
++                                onChange={inputChange}>
++                                <option value="">N/A</option>
++                                <option value="indoor">Indoor</option>
++                                <option value="Outdoor">Outdoor</option>
++
++                            </Select>
++                            {errorState.Location ? <Error>{errorState.Location}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                    <label htmlFor="currentNumber">
++                        <SelectContainer>
++                            Current members:
++                            <Input
++                                type="number"
++                                name="currentNumber"
++                                id="currentNumber"
++                                placeholder="0"
++                                value={formState.currentNumber}
++                                onChange={inputChange}
++                            />
++                            {errorState.currentNumber ? <Error>{errorState.currentNumber}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                    <label htmlFor="maxMembers">
++                        <SelectContainer>
++                            Maximum members:
++                            <Input
++                                type="number"
++                                name="maxMembers"
++                                id="maxMembers"
++                                placeholder="0"
++                                value={formState.maxMembers}
++                                onChange={inputChange}
++                            />
++                            {errorState.maxMembers ? <Error>{errorState.maxMembers}</Error> : null}
++                        </SelectContainer>
++                    </label>
++                </FormAlign>
++                <Button disabled={false} onClick={() => ToastsStore.success(`Welcome`)}>Submit</Button>
++                <ToastsContainer store={ToastsStore} />
++            </Form>
++
++        </div>
++    )
++}
++export default InstructorForm;
+\ No newline at end of file
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"frontend\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@testing-library/jest-dom\": \"^5.14.1\",\r\n    \"@testing-library/react\": \"^11.2.7\",\r\n    \"@testing-library/user-event\": \"^12.8.3\",\r\n    \"axios\": \"^0.23.0\",\r\n    \"bootstrap\": \"^5.1.3\",\r\n    \"react\": \"^17.0.2\",\r\n    \"react-bootstrap\": \"^1.6.4\",\r\n    \"react-dom\": \"^17.0.2\",\r\n    \"react-redux\": \"^7.2.5\",\r\n    \"react-router-dom\": \"^5.3.0\",\r\n    \"react-scripts\": \"4.0.3\",\r\n    \"redux-logger\": \"^3.0.6\",\r\n    \"redux-thunk\": \"^2.3.0\",\r\n    \"styled-components\": \"^5.3.1\",\r\n    \"web-vitals\": \"^1.1.2\",\r\n    \"yup\": \"^0.32.11\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision be6e1045bfd60012d23a468eecac49697bc581d8)
++++ b/package.json	(date 1634764874763)
+@@ -11,9 +11,11 @@
+     "react": "^17.0.2",
+     "react-bootstrap": "^1.6.4",
+     "react-dom": "^17.0.2",
++    "react-mdl": "^2.1.0",
+     "react-redux": "^7.2.5",
+     "react-router-dom": "^5.3.0",
+     "react-scripts": "4.0.3",
++    "react-toasts": "^3.0.6",
+     "redux-logger": "^3.0.6",
+     "redux-thunk": "^2.3.0",
+     "styled-components": "^5.3.1",
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package-lock.json b/package-lock.json
+--- a/package-lock.json	(revision be6e1045bfd60012d23a468eecac49697bc581d8)
++++ b/package-lock.json	(date 1634764874745)
+@@ -16,9 +16,11 @@
+         "react": "^17.0.2",
+         "react-bootstrap": "^1.6.4",
+         "react-dom": "^17.0.2",
++        "react-mdl": "^2.1.0",
+         "react-redux": "^7.2.5",
+         "react-router-dom": "^5.3.0",
+         "react-scripts": "4.0.3",
++        "react-toasts": "^3.0.6",
+         "redux-logger": "^3.0.6",
+         "redux-thunk": "^2.3.0",
+         "styled-components": "^5.3.1",
+@@ -3580,15 +3582,24 @@
+       "integrity": "sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ=="
+     },
+     "node_modules/@types/react": {
+-      "version": "17.0.30",
+-      "resolved": "https://registry.npmjs.org/@types/react/-/react-17.0.30.tgz",
+-      "integrity": "sha512-3Dt/A8gd3TCXi2aRe84y7cK1K8G+N9CZRDG8kDGguOKa0kf/ZkSwTmVIDPsm/KbQOVMaDJXwhBtuOXxqwdpWVg==",
++      "version": "16.14.17",
++      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.14.17.tgz",
++      "integrity": "sha512-pMLc/7+7SEdQa9A+hN9ujI8blkjFqYAZVqh3iNXqdZ0cQ8TIR502HMkNJniaOGv9SAgc47jxVKoiBJ7c0AakvQ==",
+       "dependencies": {
+         "@types/prop-types": "*",
+         "@types/scheduler": "*",
+         "csstype": "^3.0.2"
+       }
+     },
++    "node_modules/@types/react-dom": {
++      "version": "16.9.14",
++      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.14.tgz",
++      "integrity": "sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==",
++      "peer": true,
++      "dependencies": {
++        "@types/react": "^16"
++      }
++    },
+     "node_modules/@types/react-redux": {
+       "version": "7.1.19",
+       "resolved": "https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.19.tgz",
+@@ -5819,6 +5830,11 @@
+       "resolved": "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-0.6.0.tgz",
+       "integrity": "sha512-uc2Vix1frTfnuzxxu1Hp4ktSvM3QaI4oXl4ZUqL1wjTu/BGki9TrCWoqLTg/drR1KwAEarXuRFCG2Svr1GxPFw=="
+     },
++    "node_modules/clamp": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/clamp/-/clamp-1.0.1.tgz",
++      "integrity": "sha1-ZqDmQBGBbjcZaCj9yMjBRzEshjQ="
++    },
+     "node_modules/class-utils": {
+       "version": "0.3.6",
+       "resolved": "https://registry.npmjs.org/class-utils/-/class-utils-0.3.6.tgz",
+@@ -13052,6 +13068,11 @@
+       "resolved": "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz",
+       "integrity": "sha1-gteb/zCmfEAF/9XiUVMArZyk168="
+     },
++    "node_modules/lodash.isequal": {
++      "version": "4.5.0",
++      "resolved": "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz",
++      "integrity": "sha1-QVxEePK8wwEgwizhDtMib30+GOA="
++    },
+     "node_modules/lodash.memoize": {
+       "version": "4.1.2",
+       "resolved": "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz",
+@@ -16418,6 +16439,21 @@
+       "resolved": "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz",
+       "integrity": "sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA=="
+     },
++    "node_modules/react-mdl": {
++      "version": "2.1.0",
++      "resolved": "https://registry.npmjs.org/react-mdl/-/react-mdl-2.1.0.tgz",
++      "integrity": "sha512-PcMURT06RuPYDZp+S/Wa4b9Lwc/07B9+d625QfgaUh5NvuS5RC8ljQ5gSbon21yhtKT+e6nDTnFhM2yyuFQSDw==",
++      "dependencies": {
++        "clamp": "^1.0.1",
++        "classnames": "^2.2.6",
++        "lodash.isequal": "^4.4.0",
++        "prop-types": "^15.7.2"
++      },
++      "peerDependencies": {
++        "react": "^16.4",
++        "react-dom": "^16.4"
++      }
++    },
+     "node_modules/react-overlays": {
+       "version": "5.1.1",
+       "resolved": "https://registry.npmjs.org/react-overlays/-/react-overlays-5.1.1.tgz",
+@@ -16602,6 +16638,18 @@
+         }
+       }
+     },
++    "node_modules/react-toasts": {
++      "version": "3.0.6",
++      "resolved": "https://registry.npmjs.org/react-toasts/-/react-toasts-3.0.6.tgz",
++      "integrity": "sha512-SgtyyytTG6wcjI4rgv4OZmHHLiETYfiHfyz1qLv8Cxu6h9I3p+asUgY3L5DSEorOBSS4Dtv87xwXhi0KsCgLvQ==",
++      "dependencies": {
++        "watchable-stores": "^2.0.2"
++      },
++      "peerDependencies": {
++        "@types/react": "^16.8.2",
++        "@types/react-dom": "^16.8.2"
++      }
++    },
+     "node_modules/react-transition-group": {
+       "version": "4.4.2",
+       "resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz",
+@@ -19740,6 +19788,11 @@
+         "loose-envify": "^1.0.0"
+       }
+     },
++    "node_modules/watchable-stores": {
++      "version": "2.0.2",
++      "resolved": "https://registry.npmjs.org/watchable-stores/-/watchable-stores-2.0.2.tgz",
++      "integrity": "sha512-xKzypK+hG6gaZFcmiEvdazbD9Z8+hIlr+frC7Ne4N4LI0zvuPaT5uPrhn2RMxhiwaLVw70rctes+rPUTvwhPNg=="
++    },
+     "node_modules/watchpack": {
+       "version": "1.7.5",
+       "resolved": "https://registry.npmjs.org/watchpack/-/watchpack-1.7.5.tgz",
+@@ -24062,15 +24115,24 @@
+       "integrity": "sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ=="
+     },
+     "@types/react": {
+-      "version": "17.0.30",
+-      "resolved": "https://registry.npmjs.org/@types/react/-/react-17.0.30.tgz",
+-      "integrity": "sha512-3Dt/A8gd3TCXi2aRe84y7cK1K8G+N9CZRDG8kDGguOKa0kf/ZkSwTmVIDPsm/KbQOVMaDJXwhBtuOXxqwdpWVg==",
++      "version": "16.14.17",
++      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.14.17.tgz",
++      "integrity": "sha512-pMLc/7+7SEdQa9A+hN9ujI8blkjFqYAZVqh3iNXqdZ0cQ8TIR502HMkNJniaOGv9SAgc47jxVKoiBJ7c0AakvQ==",
+       "requires": {
+         "@types/prop-types": "*",
+         "@types/scheduler": "*",
+         "csstype": "^3.0.2"
+       }
+     },
++    "@types/react-dom": {
++      "version": "16.9.14",
++      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.14.tgz",
++      "integrity": "sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==",
++      "peer": true,
++      "requires": {
++        "@types/react": "^16"
++      }
++    },
+     "@types/react-redux": {
+       "version": "7.1.19",
+       "resolved": "https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.19.tgz",
+@@ -25853,6 +25915,11 @@
+       "resolved": "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-0.6.0.tgz",
+       "integrity": "sha512-uc2Vix1frTfnuzxxu1Hp4ktSvM3QaI4oXl4ZUqL1wjTu/BGki9TrCWoqLTg/drR1KwAEarXuRFCG2Svr1GxPFw=="
+     },
++    "clamp": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/clamp/-/clamp-1.0.1.tgz",
++      "integrity": "sha1-ZqDmQBGBbjcZaCj9yMjBRzEshjQ="
++    },
+     "class-utils": {
+       "version": "0.3.6",
+       "resolved": "https://registry.npmjs.org/class-utils/-/class-utils-0.3.6.tgz",
+@@ -31342,6 +31409,11 @@
+       "resolved": "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz",
+       "integrity": "sha1-gteb/zCmfEAF/9XiUVMArZyk168="
+     },
++    "lodash.isequal": {
++      "version": "4.5.0",
++      "resolved": "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz",
++      "integrity": "sha1-QVxEePK8wwEgwizhDtMib30+GOA="
++    },
+     "lodash.memoize": {
+       "version": "4.1.2",
+       "resolved": "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz",
+@@ -34038,6 +34110,17 @@
+       "resolved": "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz",
+       "integrity": "sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA=="
+     },
++    "react-mdl": {
++      "version": "2.1.0",
++      "resolved": "https://registry.npmjs.org/react-mdl/-/react-mdl-2.1.0.tgz",
++      "integrity": "sha512-PcMURT06RuPYDZp+S/Wa4b9Lwc/07B9+d625QfgaUh5NvuS5RC8ljQ5gSbon21yhtKT+e6nDTnFhM2yyuFQSDw==",
++      "requires": {
++        "clamp": "^1.0.1",
++        "classnames": "^2.2.6",
++        "lodash.isequal": "^4.4.0",
++        "prop-types": "^15.7.2"
++      }
++    },
+     "react-overlays": {
+       "version": "5.1.1",
+       "resolved": "https://registry.npmjs.org/react-overlays/-/react-overlays-5.1.1.tgz",
+@@ -34183,6 +34266,14 @@
+         "workbox-webpack-plugin": "5.1.4"
+       }
+     },
++    "react-toasts": {
++      "version": "3.0.6",
++      "resolved": "https://registry.npmjs.org/react-toasts/-/react-toasts-3.0.6.tgz",
++      "integrity": "sha512-SgtyyytTG6wcjI4rgv4OZmHHLiETYfiHfyz1qLv8Cxu6h9I3p+asUgY3L5DSEorOBSS4Dtv87xwXhi0KsCgLvQ==",
++      "requires": {
++        "watchable-stores": "^2.0.2"
++      }
++    },
+     "react-transition-group": {
+       "version": "4.4.2",
+       "resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz",
+@@ -36664,6 +36755,11 @@
+         "loose-envify": "^1.0.0"
+       }
+     },
++    "watchable-stores": {
++      "version": "2.0.2",
++      "resolved": "https://registry.npmjs.org/watchable-stores/-/watchable-stores-2.0.2.tgz",
++      "integrity": "sha512-xKzypK+hG6gaZFcmiEvdazbD9Z8+hIlr+frC7Ne4N4LI0zvuPaT5uPrhn2RMxhiwaLVw70rctes+rPUTvwhPNg=="
++    },
+     "watchpack": {
+       "version": "1.7.5",
+       "resolved": "https://registry.npmjs.org/watchpack/-/watchpack-1.7.5.tgz",
+Index: src/components/Styles/formStyles.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Styles/formStyles.js b/src/components/Styles/formStyles.js
+new file mode 100644
+--- /dev/null	(date 1634765368987)
++++ b/src/components/Styles/formStyles.js	(date 1634765368987)
+@@ -0,0 +1,123 @@
++import styled from 'styled-components'
++
++export const HeaderDiv = styled.div`
++background-color: #AED9E0;
++width: 100%;
++display:flex;
++justify-content: center;
++align-items: center;
++color: black;
++height: 70px;
++border-radius: 40px 40px 0px 0px;
++border-bottom: 1px solid black;
++background: linear-gradient(to right, #AED9E0, #B8F2E6);
++`
++
++export const FormAlign = styled.div`
++display:flex;
++flex-direction: column;
++justify-content: flex-end;
++align-items:flex-end;
++max-width: 400px;
++border: 1px solid black;
++padding: 20px;
++border-radius: 10px;
++`
++export const SelectContainer = styled.div`
++display:flex;
++align-items: center;
++`
++
++export const Select = styled.select`
++margin: 20px;
++width: 230px;
++border: 2px solid black;
++height: 30px;
++border-radius: 10px;
++&:focus {
++    outline:0
++}
++`
++
++export const Input = styled.input`
++margin: 20px;
++width: 230px;
++border: 2px solid black;
++height: 30px;
++border-radius: 10px;
++padding: 5px 10px;
++&:focus {
++    outline:0
++}
++`
++
++export const Button = styled.button`
++width: 140px;
++height: 45px;
++font-family: 'Roboto', sans-serif;
++font-size: 11px;
++text-transform: uppercase;
++letter-spacing: 2.5px;
++font-weight: 500;
++color: #000;
++background: linear-gradient(to right, #AED9E0, #B8F2E6);
++border: none;
++border-radius: 45px;
++box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
++transition: all 0.3s ease 0s;
++cursor: pointer;
++outline: none;
++display:flex;
++align-items:center;
++justify-content: center;
++margin: 10px;
++​
++&:hover {
++background-color: #2EE59D;
++box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
++color: #fff;
++transform: translateY(-7px);
++}
++&:focus {
++    outline:0
++}
++`
++
++export const Form = styled.form`
++display:flex;
++flex-direction: column;
++justify-content: center;
++align-items:center;
++margin: 10px;
++`
++
++export const Error = styled.p`
++color: red;
++`
++
++export const HomeDiv = styled.div`
++display: flex;
++flex-direction: column;
++justify-content: center;
++align-items: center;
++margin: 10px;
++
++img{
++    border-radius:10px;
++    border-bottom: 6px solid #2EE59D;
++    border-right: 6px solid #2EE59D
++}
++`
++
++export const NavLinks = styled.div`
++display: flex;
++padding: 20px;
++justify-content: space-around;
++width: 75%;
++
++
++a{
++    text-decoration: none;
++    color:  #5e6472
++}
++`
+\ No newline at end of file

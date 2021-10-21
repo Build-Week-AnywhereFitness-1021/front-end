@@ -54,6 +54,7 @@ const Login = (props) => {
                     id="username"
                     type="text"
                     name="username"
+                    placeholder="username"
                     value={creds.username}
                     onChange={handleChange}
                     /><br/>
@@ -62,6 +63,7 @@ const Login = (props) => {
                     id="password"
                     type="text"
                     name="password"
+                    placeholder="password"
                     value={creds.password}
                     onChange={handleChange}
                     /><br/>
