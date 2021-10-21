@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axiosWithAuth from '../Login/utils/axiosWithAuth';
 import ClassComponent from "./ClassComponent";
 import initialClassesList from '../dummyData/initialClassesList';
-import '../Cards/HomeCards.css';
+import '../../index.css';
 
 const ClassesList = () => {
     // const [classes, setClasses] = useState([]);

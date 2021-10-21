@@ -243,3 +243,26 @@ a.addClasses {
   box-shadow: 1px 1px darkgray;
   background-color: white;
 }
+
+/* Class Card Styling */
+div.cardHolder {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-content: center;
+  padding: 5% 5%;
+}
+div.cardHolder h1 {
+  margin-top: -5%;
+}
+div.cardHolder .cards {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color:black;
+  opacity:85%;
+  margin-top: 10%;
+  width:1000px;
+  padding: 5%;
+}
