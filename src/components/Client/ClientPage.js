@@ -11,7 +11,7 @@ const handleClick = (e) => {
 
 return (
     <div className = "clientContainer">
-        <h1>Are you ready to get fit</h1>
+        {/* <h1>Are you ready to get fit</h1> */}
         <button className='classesButton' onClick={handleClick}>CLASSES</button>
     </div>
 );
