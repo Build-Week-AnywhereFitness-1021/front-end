@@ -3,11 +3,12 @@ import { useHistory } from "react-router-dom";
 import './HomeCards.css';
 
 export const AvailableClassCard = (props) => {
-    const { card } = props;
+    const { card, classNew } = props;
     const { push } = useHistory();
     const handleClick = (e) => {
         push(`/client/focus/${card.classId}`);
     };
+    // console.log(card);
     return (
         <div className="card-available-wrap">
             <div className="card-available " onClick={handleClick}>
@@ -20,21 +21,21 @@ export const AvailableClassCard = (props) => {
                         />
                     </div>
                     <div className="card-name-container">
-                        <h2>{card["class_name"]}</h2>
-                        <p>{card["class_date"]}</p>
+                        <h2>{classNew.class_name}</h2>
+                        <p>{classNew.location}</p>
                     </div>
 
                     <div className="card-time-duration-type-container">
                         <div className="card-time">
                             <p>
-                                {card["class_time"]} {card["class_am_or_pm"]}{" "}
+                            {classNew.startTime} {classNew.startTime}{" "}
                             </p>
                         </div>
                         <div className="card-duration">
-                            <p>{card["class_duration"]} mins</p>
+                            <p>{classNew.duration} mins</p>
                         </div>
                         <div className="card-type">
-                            <p>{card["class_type"]}</p>
+                            <p>{classNew.type}</p>
                         </div>
                     </div>
                 </div>

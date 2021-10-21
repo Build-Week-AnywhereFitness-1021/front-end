@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import axiosWithAuth from '../Login/utils/axiosWithAuth';
-import ClassComponent from "./ClassComponent";
+// import axiosWithAuth from '../Login/utils/axiosWithAuth';
+// import ClassComponent from "./ClassComponent";
 import ClassCard from '../Cards/ClassCard';
 import initialClassesList from '../dummyData/initialClassesList';
 
@@ -28,7 +28,7 @@ const ClassesList = () => {
         //         console.log(err);
         //     });
         setClasses(initialClassesList)
-    }, []);
+    }, [classes]);
 
     // const handleFetch = () => {
     //     fetchClasses()
@@ -60,11 +60,9 @@ const ClassesList = () => {
             <div className="cards">
                 {classes.map((item) => {
                     return (
-                        <ClassComponent
+                        <ClassCard
                             classNew={item}
                             key={item.id}
-                            // handleDelete={handleDelete}
-                            // handleFetch={handleFetch}
                         />
                     );
                 })}
