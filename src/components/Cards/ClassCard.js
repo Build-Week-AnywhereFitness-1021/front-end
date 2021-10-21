@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import 'HomeCards.css';
+import './HomeCards.css';
 
 export const AvailableClassCard = (props) => {
     const { card } = props;

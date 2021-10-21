@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {connect} from 'react-redux';
 import { useHistory } from 'react-router';
-// import { StyledClassForm } from '../styled-components/StyledClassForm';
 import styled from 'styled-components';
 import { addClass } from '../../actions/index';
 
