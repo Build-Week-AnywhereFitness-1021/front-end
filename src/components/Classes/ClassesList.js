@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axiosWithAuth from '../Login/utils/axiosWithAuth';
 import Class from "./ClassComponent";
+import initialClassesList from '../dummyData/initialClassesList';
 
 const ClassesList = () => {
-    const [classes, setClasses] = useState([]);
+    // const [classes, setClasses] = useState([]);
+    const [classes, setClasses] = useState(initialClassesList);
 
     const fetchClasses = () => {
         return axiosWithAuth()
