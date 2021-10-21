@@ -2,30 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efe8e8a9-21b3-4d89-b98f-a24c198d1b5a" name="Changes" comment="Fixing CreateClassForm">
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/about2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/blog1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/blog2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/cat1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/cat2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/contact_form.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/team1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/team2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/images/team3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/ClassCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/HomeCards.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Instructor/CreateClassForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Instructor/CreateClassForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +83,9 @@
       <workItem from="1634769783167" duration="4079000" />
       <workItem from="1634778821586" duration="809000" />
       <workItem from="1634780018604" duration="1065000" />
-      <workItem from="1634785320457" duration="9538000" />
+      <workItem from="1634785320457" duration="9728000" />
+      <workItem from="1634828840662" duration="476000" />
+      <workItem from="1634834657077" duration="6180000" />
     </task>
     <task id="LOCAL-00001" summary="Addition of instructor form to my responsibilities">
       <created>1634661914792</created>
