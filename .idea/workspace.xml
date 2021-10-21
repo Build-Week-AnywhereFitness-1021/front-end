@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efe8e8a9-21b3-4d89-b98f-a24c198d1b5a" name="Changes" comment="Fixing CreateClassForm">
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/about2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/blog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/blog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/cat1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/cat2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/contact_form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/gallery6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/team1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/team2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/images/team3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1zgn6YhJcr1gscxY1KyrkWaiatS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Site Build/assets/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\frame\OneDrive\Desktop\Build Weeks\Anywhere Fitness-1\src\Site Build\assets\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efe8e8a9-21b3-4d89-b98f-a24c198d1b5a" name="Changes" comment="" />
+      <created>1634578427194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634578427194</updated>
+      <workItem from="1634578429765" duration="9453000" />
+      <workItem from="1634660107992" duration="8540000" />
+      <workItem from="1634672657084" duration="18930000" />
+      <workItem from="1634699177785" duration="8658000" />
+      <workItem from="1634752918230" duration="7226000" />
+      <workItem from="1634763433435" duration="1384000" />
+      <workItem from="1634765114940" duration="1848000" />
+      <workItem from="1634767712938" duration="4000" />
+      <workItem from="1634768612072" duration="751000" />
+      <workItem from="1634769783167" duration="4079000" />
+      <workItem from="1634778821586" duration="809000" />
+      <workItem from="1634780018604" duration="1065000" />
+      <workItem from="1634785320457" duration="9538000" />
+    </task>
+    <task id="LOCAL-00001" summary="Addition of instructor form to my responsibilities">
+      <created>1634661914792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634661914792</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Stepped Way out of my comfort zone with this.">
+      <created>1634681906717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634681906717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Trimming the fat">
+      <created>1634685055259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634685055259</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Did some Nav styling">
+      <created>1634689992776</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634689992776</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Did some Nav styling">
+      <created>1634690016036</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634690016036</updated>
+    </task>
+    <task id="LOCAL-00006" summary="More Styling">
+      <created>1634693750802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634693750802</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Enough Styling">
+      <created>1634739875052</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634739875052</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixing CreateClassForm">
+      <created>1634755242712</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634755242712</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixing CreateClassForm">
+      <created>1634755282886</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634755282886</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="philip-r-mcdavid" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Addition of instructor form to my responsibilities" />
+    <MESSAGE value="Stepped Way out of my comfort zone with this." />
+    <MESSAGE value="Trimming the fat" />
+    <MESSAGE value="Did some Nav styling" />
+    <MESSAGE value="More Styling" />
+    <MESSAGE value="Enough Styling" />
+    <MESSAGE value="Fixing CreateClassForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing CreateClassForm" />
+  </component>
+</project>
