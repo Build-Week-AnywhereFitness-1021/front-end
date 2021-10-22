@@ -3,7 +3,6 @@ import Classes from '../Classes/ClassesList';
 import EditForm from '../Classes/EditForm';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom'
-import KettleBells from '../../Assets/KettleBells.jpg';
 
 const InstructorPage = () => {
     const { push } = useHistory();
