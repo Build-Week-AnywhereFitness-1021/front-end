@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe8e8a9-21b3-4d89-b98f-a24c198d1b5a" name="Changes" comment="Merge remote-tracking branch 'origin/philip-r-mcdavid' into philip-r-mcdavid">
+    <list default="true" id="b0c31b02-580b-406a-80d0-9f44e7ebd942" name="Changes" comment="Merge remote-tracking branch 'origin/philip-r-mcdavid' into philip-r-mcdavid&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_18_2021_1_55_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_18_2021_1_55_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_18_2021_5_13_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_18_2021_5_13_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_18_2021_9_16_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_18_2021_9_16_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_12_24_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_12_24_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_12_38_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_12_38_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_1_00_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_1_00_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_1_00_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_2021_1_00_PM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_20_2021_9_13_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_20_2021_9_13_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/ClassCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/HomeCards.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/HomeCards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Classes/ClassesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Classes/ClassesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Client/ClassSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Client/ClassSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="efe8e8a9-21b3-4d89-b98f-a24c198d1b5a" name="Changes" comment="" />
+      <changelist id="b0c31b02-580b-406a-80d0-9f44e7ebd942" name="Changes" comment="Merge remote-tracking branch 'origin/philip-r-mcdavid' into philip-r-mcdavid&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
       <created>1634578427194</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -93,6 +93,8 @@
       <workItem from="1634785320457" duration="9728000" />
       <workItem from="1634828840662" duration="476000" />
       <workItem from="1634834657077" duration="14263000" />
+      <workItem from="1634867501425" duration="25000" />
+      <workItem from="1634872417212" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="Addition of instructor form to my responsibilities">
       <created>1634661914792</created>
@@ -171,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634849232393</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Small Styling Updates">
+      <created>1634866950499</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634866950499</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +222,7 @@
     <MESSAGE value="Can you see me now?" />
     <MESSAGE value="trying to get classes to show up on cards. Not working. HALP! lol" />
     <MESSAGE value="Merge remote-tracking branch 'origin/philip-r-mcdavid' into philip-r-mcdavid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/philip-r-mcdavid' into philip-r-mcdavid" />
+    <MESSAGE value="Small Styling Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Styling Updates" />
   </component>
 </project>
