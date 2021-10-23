@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0c31b02-580b-406a-80d0-9f44e7ebd942" name="Changes" comment="Merge remote-tracking branch 'origin/philip-r-mcdavid' into philip-r-mcdavid&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +89,8 @@
       <workItem from="1634834657077" duration="14263000" />
       <workItem from="1634867501425" duration="25000" />
       <workItem from="1634872417212" duration="4749000" />
-      <workItem from="1634907106945" duration="204000" />
+      <workItem from="1634907106945" duration="1118000" />
+      <workItem from="1634951743997" duration="280000" />
     </task>
     <task id="LOCAL-00001" summary="Addition of instructor form to my responsibilities">
       <created>1634661914792</created>
